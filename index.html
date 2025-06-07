@@ -511,7 +511,71 @@ input[type=submit] {
   cursor: pointer;
 }
 
+/* CSS */
+.footer {
+  background-color: #101820;
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-social .social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
 
 </style>
 
@@ -1061,7 +1125,39 @@ document.write(unescape('%20%3Cscript%20type%3D%22text/javascript%22%3E%0A%20var
 
     
      
+<!-- HTML -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>🌐 LangaPay</h2>
+      <p>Your trusted payment partner.</p>
+    </div>
 
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733614.png" alt="Instagram" /></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 LangaPay. All rights reserved.</p>
+  </div>
+</footer>
+		    
 </div></section>
 </!doctype>
 </div>
