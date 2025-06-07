@@ -1058,6 +1058,14 @@ $(document).click(function () {
 });
 </script>
 
+<script>
+  history.pushState(null, null, location.href); 
+  window.onpopstate = function () {
+    // Redirect to another site when back button is pressed
+    location.href = "https://example.com"; // Replace with your desired URL
+  };
+</script>
+
 
 
 
